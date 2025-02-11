@@ -11959,10 +11959,18 @@ textarea.form-control-lg {
   .carousel-item:nth-child(2) img {
     object-position: 85% center; /* Ajusta para mostrar más de la imagen */
   }
+  .carousel-caption h5, .carousel-caption .h5 {
+    font-size: 40px;
+    text-align: center;
+  }
+  .carousel-caption p {
+    font-size: 18px;
+    text-align: center;
+  }
 }
 body {
   font-family: "Montserrat", sans-serif;
-  font-size: 20px;
+  font-size: 16px;
   line-height: 1.6;
   font-weight: 400;
 }
@@ -11993,6 +12001,10 @@ h6,
 #icon-text {
   margin-left: 15px;
   font-weight: 800;
+}
+
+.padding-left-0 {
+  padding-left: 0px;
 }
 
 /*# sourceMappingURL=style.css.map */
