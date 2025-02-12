@@ -12028,4 +12028,25 @@ h6,
   font-size: 1rem;
 }
 
+#goTop {
+  position: fixed;
+  right: 15px;
+  bottom: 15px;
+}
+#goTop a {
+  background: #106eea;
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  display: flex;
+  transition: opacity 0.3s linear;
+}
+#goTop a:hover {
+  opacity: 0.7;
+}
+
 /*# sourceMappingURL=style.css.map */

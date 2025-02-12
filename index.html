@@ -22,7 +22,7 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
   </head>
   
-  <body>
+  <body data-bs-spy="scroll" data-bs-target="#goTop">
 
     <!--topbar -->
 
@@ -191,10 +191,6 @@
               At Business, we are dedicated to providing exceptional products/services that exceed our customers' expectations. Our team of experienced professionals brings a wealth of knowledge and
               expertise to every project, ensuring that we deliver high-quality results every time.
             </p>
-            <p>
-              Our mission is to mission statement, and we are committed to achieving this by prioritizing our customers' needs and satisfaction.
-            </p>
-
           </div>
         </div>
       </div>
@@ -203,9 +199,33 @@
 
     </main>
 
+    <!--to top -->
+
+    <div id="goTop">
+
+      <a href="#topbar" id="goTopBtn" >
+        <i class="fa-solid fa-chevron-up"></i>
+      </a>
+    </div>
+
 
 
     <!--bootstrap js -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+
+        <!--scrollspy js code -->
+    <script>
+      let goTopBtn = document.getElementById("goTopBtn");
+      window.onscroll = function () {
+        scrollFunction();
+      };
+      function scrollFunction() {
+        if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+          goTopBtn.style.display = "flex";
+        } else {
+          goTopBtn.style.display = "none";
+        }
+      }
+    </script>
   </body>
 </html>
