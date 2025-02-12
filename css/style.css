@@ -11998,6 +11998,10 @@ h6,
   font-weight: 600;
 }
 
+.social-media {
+  gap: 8px;
+}
+
 #icon-text {
   margin-left: 15px;
   font-weight: 800;
